@@ -58,16 +58,12 @@ JRS_Imager/
 │   └── design.md                  … 本書
 ├── public/                        … favicon など
 ├── src/
-│   ├── main.ts                    … 起動・画面イベントの結線
+│   ├── main.ts                    … 画面の状態管理・イベントの結線・プレビュー（UI は規模が小さいためここに集約）
 │   ├── formats.ts                 … 形式の定義（サイズ・フォルダ名）
 │   ├── fit.ts                     … 合わせ方ごとの描画範囲の計算（純粋関数）
 │   ├── resize.ts                  … Canvas による高品質リサイズ
 │   ├── naming.ts                  … 出力ファイル名・表示名の生成
 │   ├── download.ts                … Blob のダウンロード
-│   ├── ui/
-│   │   ├── dropzone.ts            … 読み込みエリア
-│   │   ├── controls.ts            … 形式・番号・合わせ方の選択
-│   │   └── preview.ts             … プレビュー表示
 │   └── style.css
 ├── tests/
 │   ├── fit.test.ts

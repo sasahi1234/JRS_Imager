@@ -22,6 +22,17 @@ Real Ramen Simulator のマイデザイン用画像を、自動でリサイズ�
 - [要件定義書](docs/requirements.md)
 - [設計書](docs/design.md)
 
+## 開発
+
+```bash
+npm install
+npm run dev     # http://localhost:5173/JRS_Imager/
+npm test
+npm run build
+```
+
+main への push で GitHub Actions が GitHub Pages に公開します（リポジトリの Settings → Pages → Source を「GitHub Actions」にしてください）。
+
 ## 状態
 
-設計段階です（実装はまだありません）。
+MVP（FR-01〜FR-10）を実装済みです。まだ GitHub には公開していません。
